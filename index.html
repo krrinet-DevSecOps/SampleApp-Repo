@@ -1,8 +1,114 @@
+#<!DOCTYPE html>
+#<html>
+#<head><title>AWS CodeDeploy Demo</title></head>
+#<body style="background-color: #ADD8E6;">
+#  <h1>Codepipeline with approval stage-v2</h1>
+ # <p>Deployed to: <strong>EC2 Fleet</strong></p>
+#</body>
+#</html>
+
 <!DOCTYPE html>
-<html>
-<head><title>AWS CodeDeploy Demo</title></head>
-<body style="background-color: #ADD8E6;">
-  <h1>Codepipeline with approval stage-v2</h1>
-  <p>Deployed to: <strong>EC2 Fleet</strong></p>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80') no-repeat center center fixed;
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+
+.container{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    color:white;
+    padding:50px;
+    width:90%;
+    max-width:700px;
+    background:rgba(255,255,255,0.10);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,.4);
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+button{
+    padding:15px 40px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    background:#00c853;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#00a844;
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:35px;
+    font-size:14px;
+    opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+<h1>🚀 Welcome to AWS</h1>
+
+<p>Your application has been successfully deployed on an Amazon EC2 instance using AWS CodeDeploy.</p>
+
+<button onclick="alert('Deployment Successful! 🎉')">
+Explore
+</button>
+
+<div class="footer">
+Powered by AWS EC2 • CodeDeploy • Apache/Nginx
+</div>
+
+</div>
+
 </body>
 </html>
